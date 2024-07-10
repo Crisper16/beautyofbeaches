@@ -1,0 +1,2831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BeautyOfBeaches</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ 
+	<style>
+.services-section {
+      position: relative;
+      background-color: #87CEEB; /* Light blue sky */
+      overflow: hidden;
+      padding-bottom: 100px; /* Add padding for waves */
+      background: linear-gradient(180deg, transparent, rgba(39, 141, 172, 0.6), rgb(222, 184, 135)); /* Transparent to white gradient *//* Beach background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh; /* Ensure section covers viewport */
+      display: flex;
+      align-items: center;
+    }
+
+    .services-sections {
+      position: relative;
+      background-color: #87CEEB; /* Light blue sky */
+      overflow: hidden;
+      padding-bottom: 100px; /* Add padding for waves */
+      background: linear-gradient(180deg,rgb(222, 184, 135), rgba(39, 141, 172, 0.6), rgb(255, 255, 255)); /* Transparent to white gradient *//* Beach background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh; /* Ensure section covers viewport */
+      display: flex;
+      align-items: center;
+    }
+
+    /* Waves animation */
+    .waves {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 200px; /* Adjust height as needed */
+      background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.4), transparent); /* Transparent to white gradient */
+      animation: animateWaves 20s linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes animateWaves {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 100%;
+      }
+    }
+
+    /* Sun */
+    .sun {
+      position: absolute;
+      top: 10%;
+      right: 5%;
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(circle, #FFD700 20%, rgba(255, 215, 0, 0) 70%);
+      border-radius: 50%;
+      box-shadow: 0 0 50px 10px rgba(255, 255, 0, 0.2); /* Sun glow effect */
+      z-index: 2;
+      animation: sunGlow 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes sunGlow {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 50px 10px rgba(255, 255, 0, 0.2);
+      }
+      50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 80px 20px rgba(255, 255, 0, 0.4);
+      }
+    }
+
+    /* Clouds */
+    .clouds {
+      position: absolute;
+      top: 20%; /* Adjust clouds position */
+      left: 0;
+      width: 100%;
+      height: 150px; /* Adjust height as needed */
+      background-image: url('https://i.imgur.com/P8uXi1A.png'); /* Clouds image */
+      background-repeat: repeat-x;
+      animation: animateClouds 60s linear infinite;
+      z-index: 3;
+    }
+
+    @keyframes animateClouds {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Content styling */
+    .containers {
+      position: relative;
+      z-index: 4; /* Ensure content is above background */
+      color: #fff; /* Text color */
+    }
+
+    .containers h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+    }
+
+    .containers p {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+
+    .btn-dark {
+      background-color: #222;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-dark:hover {
+      background-color: #555;
+    }
+
+
+.ftco-section .ff {
+            position: relative;
+            padding: 50px 0;
+            overflow: hidden;
+        }
+        .ff::before,
+        .ff::after {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: 332px;
+            left: -50%;
+            background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg') repeat-x;
+            animation: wave 2s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+        }
+        .ff::after {
+            top: 390px;
+            opacity: 0.5;
+            animation: wave 3s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+        }
+        @keyframes wave {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                transform: translate3d(-80%, 0, 0);
+            }
+        }
+        .ftco-section .fff {
+            position: relative;
+            padding: 50px 0;
+            overflow: hidden;
+        }
+        .fff::before,
+        .fff::after {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 100%;
+            top: 132px;
+            left: -50%;
+            background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg') repeat-x;
+            animation: wave 2s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+        }
+        .fff::after {
+            top: 190px;
+            opacity: 0.5;
+            animation: wave 3s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+        }
+       
+        
+        .heading-section {
+            z-index: 1;
+            position: relative;
+        }
+        .project-destination {
+            z-index: 1;
+            position: relative;
+        }
+        .img {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 200px;
+            display: flex;
+            align-items: flex-end;
+            text-decoration: none;
+            color: white;
+        }
+        .img .text {
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+        .icon-camera {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .view-more {
+            display: block;
+            font-size: 0.9em;
+            color: #fff;
+        }
+		
+		
+		.contact-section {
+            padding: 50px 0;
+        }
+        .box {
+            background: #fff;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .icon {
+            font-size: 40px;
+            color: #333;
+            animation: wave 2s ease-in-out infinite;
+        }
+	#pco .icon :hover{
+			background-color: rgba(255, 217, 0, 0)!important;
+			cursor: pointer;
+			color: gold!important;
+		
+		}
+        .icon:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .icon:nth-child(2) {
+            animation-delay: 2s;
+        }
+        .icon:nth-child(3) {
+            animation-delay: 4s;
+        }
+        .icon:nth-child(4) {
+            animation-delay: 6s;
+        }
+        @keyframes wave {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .box::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #007bff;
+            z-index: -1;
+            animation: wave-background 8s infinite linear;
+            transform: translateY(100%);
+        }
+        @keyframes wave-background {
+            0%, 100% {
+                transform: translateY(100%);
+            }
+            50% {
+                transform: translateY(-100%);
+            }
+        }
+
+	.gallery-container {
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlays {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+
+.swiper-slide:hover .overlay {
+    height: 100%;
+}
+
+.texting {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* Positioning the navigation buttons */
+.swiper-button-next, .swiper-button-prev {
+    color: white;
+    top: 50%;
+    width: calc(1.5em + 5vw);
+    height: calc(1.5em + 5vw);
+    margin-top: -20px;
+    z-index: 10;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+/* Pagination styles */
+.swiper-pagination-bullet {
+    background: white;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background: #007aff;
+    opacity: 1;
+}
+
+
+@keyframes starAnimation {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+.icon {
+      font-size: 24px; /* Adjust icon size as needed */
+    }
+		.block-27 li{background-color: black;padding: 1%;border-radius: 43px;width: 5%;cursor: pointer;}
+		.block-27 li:hover{opacity: 0.8;}
+
+		#feedback-carousel .item {
+    display: inline-block; /* or flex */
+     /* Adjust the width as necessary */max-width: 100%;
+}
+
+/* Ensure that the container allows flex or inline-block items */
+#feedback-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Add this CSS to style the like button */
+.like-button {
+    font-size: 24px;
+    color: rgb(189, 28, 28);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.like-button.liked {
+    color: red;
+}
+.like-button::after{color: red;}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:transparent; /* Set a background color */
+  color: rgb(255, 175, 2); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  animation: none;
+  border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+  opacity: 0.5; /* Add a dark-grey background on hover */
+}
+
+/* CSS: Add this to your stylesheet */
+.star {
+      cursor: pointer;
+      font-size: 20px;
+      color: gold; /* Default color */
+    }
+    .star.filled {
+      color: #f5c518; /* Filled star color */
+    }
+
+	.project-destination { border:none;transition: all 0.74s ease-in-out;}
+	.project-destination:hover{
+
+      box-shadow: 3px 4px 34px black;transform: scale(1.02);
+	}
+
+	.project-wrap {transition: all 0.09s ease-in-out;}
+	.project-wrap:hover{
+
+    box-shadow: 1px 2px 12px black;cursor:context-menu;
+	}
+
+	.project-destination {
+  position: relative;border: none;
+  overflow: hidden;
+}
+
+.project-destination .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px;
+}
+.project-destination .text:hover{ background-color: rgba(0, 0, 0, 0.3);}
+.project-destination .view-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(29, 27, 27, 0.7);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.project-destination:hover .view-more {
+  opacity: 1;
+}
+.icon-wb_sunny{color:rgba(97, 62, 16, 0.719);font-size: 900%;}
+
+.skotela {opacity: 1; animation: leftanim 15.4s ease-in-out infinite;}
+
+.icon-wb_sunny:hover{color: rgba(9, 9, 9, 1);cursor: pointer;transition: all 0.9s ease-in-out;}
+
+
+@keyframes leftanim{0%{opacity: 1;transform: rotate(0deg);}
+                       
+                        100%{opacity: 1;transform: rotate(360deg);}
+					}
+
+					.hero-wrap {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero-wrap video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(97, 1, 1, 0.5); /* Adjust the overlay color and transparency */
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+
+	.img {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.img::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%);
+    background-size: 20px 20px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+    z-index: 1;}
+	
+	.img:hover::before {
+    opacity: 1;
+    
+
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.project-wrap:hover h3 a{text-decoration: underline;}
+
+/* Custom CSS for Feedback Display */
+
+/* Feedback Card */
+.feedback-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feedback-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-card .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #3498db; /* Adjust color as needed */
+    margin-bottom: 15px;
+}
+
+.feedback-card .card-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.feedback-card .card-subtitle {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.feedback-card .card-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444444;
+}
+
+/* Icon Selection */
+.icon-selection {
+    display: flex;
+    align-items: center;
+}
+
+.icon-selection .icon {
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-selection .icon:hover {
+    transform: scale(1.2);
+}
+
+.icon-selection .icon span {
+    font-size: 36px;
+    color: #666666; /* Adjust color as needed */
+}
+
+/* Form Button */
+#feedback-form .btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+#feedback-form .btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.read-more-content {
+    display: block;
+    overflow: hidden;
+    max-height: 1.2em; /* Adjust the height as needed */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.read-more-content.expanded {
+    max-height: none;
+    white-space: normal;
+}
+
+.read-more-link {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.info-message p {
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #0176ea;
+	border: 1px solid #dee2e6;
+	border-radius: 5px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent black overlay */
+    transition: background 0.3s ease;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: #000; /* Default link color */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #f5970c; /* Underline color */
+    transition: width 0.3s ease;
+}
+.navbar-nav .nav-link .nav-link.active{color: #000 !important;}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+    color: #ff8c00 !important; /* Hover and active link color */
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%; color: rgb(247, 198, 4)!important;
+}
+.nav-link.active{color: #ffb700!important;}
+.hero-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styles for raindrops animation */
+@keyframes raindrops {
+      0% { top: -50px; opacity: 0; }
+      100% { top: 100%; opacity: 1; }
+    }
+    
+    .raindrop {
+      position: absolute;
+      width: 2px;
+      height: 10px;
+	  z-index: 3000;
+      background-color: rgba(255, 255, 255, 0.5);
+      animation: raindrops linear infinite;
+      animation-duration: 2s;
+      animation-delay: calc(-2s * var(--index));
+      animation-fill-mode: both;
+    }
+
+    /* Adjust the footer background and positioning */
+    .ftco-footer {
+      position: relative;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    /* Additional styling as needed */
+    .ftco-footer-widget {
+      color: #fff;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .ftco-footer {
+        background-attachment: scroll;
+      }
+    }
+
+	.hero-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1000; /* Ensure the rain appears above other elements */
+}
+
+.drop {
+    position: absolute;
+    bottom: 100%;
+    width: 1px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.5);
+    animation: fall linear infinite;
+    animation-delay: calc(var(--i) * -1s);
+    opacity: 0.5;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.raindrop {
+      position: absolute;
+      width: 2px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      animation: raindrops linear infinite;
+      animation-duration: 2s;
+      animation-delay: calc(-2s * var(--index));
+      animation-fill-mode: both;
+    }
+
+    /* Adjust the footer background and positioning */
+    .ftco-footer {
+      position: relative;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    /* Additional styling as needed */
+    .ftco-footer-widget {
+      color: #ce0c0c;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .ftco-footer {
+        background-attachment: scroll;
+      }
+    }
+
+	.hero-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1500; /* Ensure the rain appears above other elements */
+}
+
+.drop {
+    position: absolute;
+    bottom: 100%;
+    width: 1px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.5);
+    animation: fall linear infinite;
+    animation-delay: calc(var(--i) * -1s);
+    opacity: 0.5;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.extra-content {
+        display: none; /* Initially hide extra content */
+    }
+
+    .read-more {
+        cursor: pointer;
+        color: #007bff;
+        text-decoration: underline;
+    }
+
+	/* Styling for footer */
+	   /* Styling for footer */
+	          /* Styling for footer */
+			  .ftco-footer {
+            background-color: #0d1b30;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .ftco-footer-widget h2 {
+            color: #fff;
+        }
+
+        .ftco-footer-widget p, .ftco-footer-widget ul {
+            color: #fff;
+        }
+
+        .ftco-footer-social li {
+            margin-right: 10px;
+        }
+
+        .raindrop {
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background-color: #9ea5ab;
+            animation: raindrop-fall 3s linear infinite, raindrop-wave 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes raindrop-fall {
+            0% { transform: translateY(-50px); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+
+        @keyframes raindrop-wave {
+            0% { transform: scaleY(1); }
+            100% { transform: scaleY(1.5); }
+        }
+
+        /* Styling for marquee time ticker */
+
+        .marquee-container {
+            overflow: hidden;
+            position: absolute;
+            top: 99%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+
+        .marquee-content {
+            white-space: nowrap;
+            animation: marquee-slide 30s linear infinite;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        @keyframes marquee-slide {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+
+        @keyframes marquee-slide {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+		/* Stars animation */
+        .starss {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Prevents stars from interfering with footer links */
+        }
+
+        .starss::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            background: radial-gradient(circle, #fff 10%, transparent 20%);
+            background-size: 5px 5px;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            z-index: 1;
+            animation: shine 10s linear infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(360deg); }
+        }
+
+        /* Back to top button */
+        .back-to-tops {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 999;
+        }
+
+        .back-to-tops:hover {
+            background-color: #555;
+        }
+
+		.image-container {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px; /* Adjust height as needed */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 27, 48, 0.7); /* Overlay color */
+}
+
+@keyframes waveAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1366px 0; /* Adjust distance for smooth animation */
+    }
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    animation: waveAnimation 10s linear infinite;
+}
+
+</style>
+  </head>
+  <body id="content">
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar" id="ftco-navbar" style="z-index: 1200; background: rgb(0,0,0,0.5);position: fixed;top: 0;right: 0;left: 0;">
+	    <div class="container">
+	      <a class="navbar-brand"></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="#" class="nav-link" title="home page">Home</a></li>
+	          <li class="nav-item"><a href="#about" class="nav-link" title="read about us">About</a></li>
+			  <li class="dropdown nav-item">
+				<a href="#destination" class="nav-link" title="get your destination">Destination</a>
+				<div class="dropdown-content">
+				  <a href="#destination" >Choose Zone</a>
+				 
+			  </div>
+			  </li>
+	          <li class="nav-item"><a href="#gallery" class="nav-link" title="view diifferent beaches">Gallery</a></li>
+	          <li class="nav-item"><a href="#contact" class="nav-link" title="our contact details">Contact</a></li>
+	          <li class="nav-item cta" style="margin-left: 35%;"><a href="#" class="nav-link text-primary font-weight-bolder" title="people who visited our page" style="z-index: 20000;" id="visitor-count">
+				</a></li>
+
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav++ -->
+
+    <!-------------------------====================home paqge=============================---------------------------------->
+	
+	<div class="hero-wrap js-fullheight">
+		<video autoplay loop muted playsinline>
+			<source src="videos/trim.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+				<div class="col-md-9 text text-center" data-scrollax="properties: { translateY: '70%' }" style="z-index: 1000;">
+					<div class="skotela">
+						
+					</div>
+					<div><span class="icon-directions_boat"></span></div>
+					<p class="caps text-primary" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Travel to any corner of the world, without going around in circles</p>
+					<h1 data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" class="text text-light font-weight-bolder ftco-animate">
+						<span class="typing"></span>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!--end of home page------------------------------------------------------------------------------------------------------------------------------->
+
+ <!------------------------------------------------------about us---------------------------------------------------------------------------------->
+
+ <section class="ftco-section services-section ftco-animate" id="about">
+  <div class="waves"></div>
+  <div class="sun"></div>
+  <div class="clouds"></div>
+  <div class="container">
+    <h1 class="text-dark align-content-center text-center pb-2 mt-1 font-weight-bolder ftco-animate">About Us</h1>
+    <div class="mt-3 mb-2 pb-1 pt-1"></div>
+    <div class="row d-flex mt-5">
+      <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
+        <h2 class="mb-4">Discover Coastal Wonders Around the Globe</h2>
+        <div class="content-section" id="content">
+          <p>At Beauty Of Beaches, we are passionate about exploring and celebrating the beauty of the world's most stunning beaches. 
+            Our mission is to inspire and guide travelers like you to discover the perfect beach destinations that offer unforgettable experiences.</p>
+          
+          <!-- Hidden content for "Read More" -->
+          <div class="extra-content" id="extraContent">
+            <!-- Additional content can go here if needed -->
+            <b>What We Offer</b><br><br>
+            
+            <b>Inspiration:</b><br> We curate a collection of the world's most breathtaking beaches, each offering its own unique charm and beauty.
+            Whether you're looking for secluded shores, vibrant marine life, or iconic landscapes, our website is your gateway to finding your dream beach destination.<br><br>
+            
+            <b>Information:</b><br> We provide detailed insights into each destination, including the best times to visit, must-see attractions nearby,
+            and activities that cater to every traveler's interests. Our goal is to ensure you have all the information you need to plan an incredible beach getaway.<br><br>
+            
+            <b>Community:</b><br> Join our community of beach enthusiasts and travelers from around the globe. Share your own experiences, tips, and recommendations,
+            and connect with like-minded individuals who share your passion for exploring the world's best beaches.
+            
+          </div>
+          
+          <!-- "Read More" link -->
+          <p><a href="#" id="readMoreLink" class="btn btn-dark py-3 px-4">Read More</a></p>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6 d-flex align-self-stretch anim">
+            <div class="media block-6 services d-block">
+              <div class="icon d-flex align-items-center justify-content-center animate__animated animate__bounce">
+                <span class="icon-phone2" id="phone"></span>
+              </div>
+              <div class="media-body">
+                <p>+268 78546773</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon"><span class="icon-map2"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Site Map</h3>
+                <p>We are located in the Matsapha Eswatini, Phocweni At The Royal Science And Technology Park</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon d-flex align-items-center justify-content-center animate__animated animate__bounce">
+                <span class="icon-paper-plane"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Email</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-self-stretch anim">
+            <div class="media block-6 services d-block">
+              <div class="icon"><span class="icon-smile-o animate__animated animate__bounce"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Get Us On Social Media</h3>
+                <p id="more">A small river named Duden flows by their place and supplies it with the necessary</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="ftco-counter services-sections img" id="section-counter">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 d-flex ftco-animate ">
+    				<div class="img d-flex align-self-stretch" style="background-image:url(images/cancun-sun.jpg); cursor: pointer;"></div>
+    			</div>
+    			<div class="col-md-6 pl-md-5 mt-5 py-1">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		            <h2 class="mb-4">Make Your Tour Memorable and Safe With Us</h2>
+		            <p class="text text-secondary bg-light">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+		          </div>
+		        </div>
+		    		<div class="row">
+		          <div class="col-md-4 justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center mb-4">
+		              <div class="text">
+		                <strong class="number" id="sad-count">0</strong>
+		                <span>Successful Tours</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-4 justify-content-center counter-wrap ftco-animate" id="top-rated-count-container">
+					<div class="block-18 text-center mb-4">
+					  <div class="text">
+						<strong class="number" id="happy-count">0</strong>
+						<span>Happy Visitors</span>
+					  </div>
+					</div>
+				  </div>
+				  
+		          <div class="col-md-4 justify-content-center counter-wrap ftco-animate ">
+		            <div class="block-18 text-center mb-4">
+		              <div class="text">
+		                <strong class="number" id="display" ></strong>
+
+		                <span>Visitors</span>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+ <!--end-->
+
+ <!-------------------------===========================>>>>destination section<<<<=======================---------------------------->
+
+ <!-- Destination Section -->
+<section class="ftco-section ff" id="destination">
+	<div class="container">
+	  <div class="row justify-content-center pb-4">
+		<div class="col-md-12 heading-section text-center ftco-animate">
+		  <h2 class="mb-4">Best Place Destination</h2>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-md-3">
+		  <div class="project-destination ftco-animate " data-target="#south">
+			<a href="#south1" class="img" style="background-image: url(images/img3.jpg);">
+			  <div class="text">
+				<h3 class="icon-camera">Southern Hemisphere</h3>
+				<span>8 places</span>
+				 <!-- Added fixed notification -->
+				<span class="view-more">View destination</span> <!-- Added view more message -->
+			  </div>
+			</a>
+		  </div>
+		</div>
+		<div class="col-md-3">
+		  <div class="project-destination" data-target="#east">
+			<a href="#east1" class="img" style="background-image: url(images/img4.webp);">
+			  <div class="text">
+				<h3 class="icon-camera">Eastern Hemisphere</h3>
+				<span>2 places</span>
+				<span class="view-more">View destination</span>
+			  </div>
+			</a>
+		  </div>
+		</div>
+		<div class="col-md-3">
+		  <div class="project-destination ftco-animate " data-target="#north">
+			<a href="#north1" class="img" style="background-image: url(images/img5.webp);">
+			  <div class="text">
+				<h3 class="icon-camera">Northern Hemisphere</h3>
+				<span>5 places</span>
+				<span class="view-more">View destination</span>
+			  </div>
+			</a>
+		  </div>
+		</div>
+		<div class="col-md-3">
+		  <div class="project-destination" data-target="#west" >
+			<a href="#west1" class="img" style="background-image: url(images/img6.jfif);">
+			  <div class="text">
+				<h3 class="icon-camera">Western Hemisphere</h3>
+				<span>5 places</span>
+				<span class="view-more">View destination</span>
+			  </div>
+			</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+
+
+<!-- Router Sections -->
+<div class="container mt-1" id="south1">
+	<div class="mt-5 pt-1">
+
+	</div>
+   </div>
+   <!-- Content for Southern Hemisphere -->
+  <section id="south" class="router ftco-section ftco-no-pt mt-5" style="display: block;" >
+	
+	<div class="container" id="southern">
+		<div class="row justify-content-center pb-4">
+	  <div class="col-md-12 heading-section text-center ftco-animate" >
+		<h2 class="mb-4 mt-3">Southern Zone</h2>
+	  </div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/borabora.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.lonelyplanet.com/articles/best-beaches-in-bora-bora" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.lonelyplanet.com/articles/best-beaches-in-bora-bora" target="_blank">Bora Bora</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span> French Polynesia</p>
+				<ul>
+					<li><span class="icon-bus" title="from town" onclick="showInfo('Bora-Bora', 'bus')"></span>5</li>
+					<li><span class="icon-car" title="3 min from town" onclick="showInfo('Bora-Bora', 'car')"></span>20+</li>
+					<li><span class="icon-local_airport" title="flights" onclick="showInfo('Bora-Bora', 'flight')"></span>6</li>
+					<li><span class="icon-hotel" title="hotels" onclick="showInfo('Bora-Bora', 'hotel')"></span>12</li>
+					<li><span class="icon-hotel" title="hotels" onclick="showInfo('Bora-Bora', 'remove')"></span>12</li>
+				</ul>
+				<div class="info-message" id="info-message-Bora-Bora"></div>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5" onclick="go()">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/Anse.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.jonnymelon.com/anse-source-dargent-la-digue-seychelles/" target="_blank"><span class="price icon-beach_access"></span></a>
+				<h3><a href="https://www.jonnymelon.com/anse-source-dargent-la-digue-seychelles/" target="_blank">Anse Source d'Argent</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span> La Digue, Seychelles</p>
+				<ul>
+					<li><span class="icon-bus" title="from town" onclick="showInfo('navagio-beach', 'bus')"></span>5</li>
+					<li><span class="icon-car" title="3 min from town" onclick="showInfo('navagio-beach', 'car')"></span>20+</li>
+					<li><span class="icon-local_airport" title="flights" onclick="showInfo('navagio-beach', 'flight')"></span>6</li>
+					<li><span class="icon-hotel" title="hotels" onclick="showInfo('navagio-beach', 'hotel')"></span>12</li>
+				</ul>
+				<div class="info-message" id="info-message-Anse-Source-d-Argent"></div>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div><div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/Bai.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.lonelyplanet.com/brazil/fernando-de-noronha/attractions/baia-do-sancho/a/poi-sig/1604417/1315051" target="_blank"><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.lonelyplanet.com/brazil/fernando-de-noronha/attractions/baia-do-sancho/a/poi-sig/1604417/1315051" target="_blank">Baía do Sancho</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span>  Fernando de Noronha, Brazil</p>
+				<ul>
+					<li><span class="icon-bus" title="from town" onclick="showInfo('navagio-beach', 'bus')"></span>5</li>
+					<li><span class="icon-car" title="3 min from town" onclick="showInfo('navagio-beach', 'car')"></span>20+</li>
+					<li><span class="icon-local_airport" title="flights" onclick="showInfo('navagio-beach', 'flight')"></span>6</li>
+					<li><span class="icon-hotel" title="hotels" onclick="showInfo('navagio-beach', 'hotel')"></span>12</li>
+				</ul>
+				<div class="info-message" id="info-message-Baía-do-Sancho"></div>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/praia.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.lonelyplanet.com/articles/tofo-big-experiences" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.lonelyplanet.com/articles/tofo-big-experiences" target="_blank">Praia do Tofo</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span> Mozambique</p>
+				<ul>
+					<li><span class="icon-bus" title="from town" onclick="showInfo('navagio-beach', 'bus')"></span>5</li>
+					<li><span class="icon-car" title="3 min from town" onclick="showInfo('navagio-beach', 'car')"></span>20+</li>
+					<li><span class="icon-local_airport" title="flights" onclick="showInfo('navagio-beach', 'flight')"></span>6</li>
+					<li><span class="icon-hotel" title="hotels" onclick="showInfo('navagio-beach', 'hotel')"></span>12</li>
+				</ul>
+				<div class="info-message" id="info-message-Praia-do-Tofo"></div>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/tulum.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://insiderstulum.com/tulum-beach/" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://insiderstulum.com/tulum-beach/" target="_blank">Tulum Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span> Quintana Roo, Mexico</p>
+				<ul>
+					<li><span class="icon-bus" title="from town" onclick="showInfo('navagio-beach', 'bus')"></span>5</li>
+					<li><span class="icon-car" title="3 min from town" onclick="showInfo('navagio-beach', 'car')"></span>20+</li>
+					<li><span class="icon-local_airport" title="flights" onclick="showInfo('navagio-beach', 'flight')"></span>6</li>
+					<li><span class="icon-hotel" title="hotels" onclick="showInfo('navagio-beach', 'hotel')"></span>12</li>
+				</ul>
+				<div class="info-message" id="info-message-Tulum-Beach"></div>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/clifton.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.parks.vic.gov.au/places-to-see/sites/clifton-beach" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.parks.vic.gov.au/places-to-see/sites/clifton-beach" target="_blank">Clifton Beaches</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>		<p class="location"><span class=" icon-location_city"></span> Cape Town, South Africa</p>
+						<ul>
+							<li><span class="icon-bus" title="from town" onclick="showInfo('navagio-beach', 'bus')"></span>5</li>
+							<li><span class="icon-car" title="3 min from town" onclick="showInfo('navagio-beach', 'car')"></span>20+</li>
+							<li><span class="icon-local_airport" title="flights" onclick="showInfo('navagio-beach', 'flight')"></span>6</li>
+							<li><span class="icon-hotel" title="hotels" onclick="showInfo('navagio-beach', 'hotel')"></span>12</li>
+						</ul>
+						<div class="info-message" id="info-message-Clifton-Beaches"></div>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		 
+	</div>
+  </section>
+
+  <div  id="north1">
+	<div >
+</div>
+   </div>
+
+  <!-- Content for Northern Hemisphere -->
+   <section id="north" class="router ftco-section ftco-no-pt mt-5" style="display:none;">
+	<div class="container" id="northern">
+		<div class="row justify-content-center pb-4">
+	  <div class="col-md-12 heading-section text-center ftco-animate" >
+		<h2 class="mb-4 mt-3">Northern Zone</h2>
+	  </div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/cannon.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.cannonbeach.org/" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.cannonbeach.org/" target="_blank">Cannon Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span> Oregon, USA</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/bondibeach.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.australia.com/en-us/places/sydney-and-surrounds/guide-to-bondi.html" target="_blank" ><span class="price icon-beach_access"></span></a>
+				<h3><a href="https://www.australia.com/en-us/places/sydney-and-surrounds/guide-to-bondi.html" target="_blank">Bondi Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+						<p class="location"><span class=" icon-location_city"></span>Sydney, Australia</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div><div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/Waikikibeach.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.hawaii-guide.com/oahu/beaches/waikiki-beach" target="_blank"><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.hawaii-guide.com/oahu/beaches/waikiki-beach" target="_blank">Waikiki Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+						<p class="location"><span class=" icon-location_city"></span>Oahu, Hawaii, USA</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/katabeach.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.phuket101.net/kata-beach/" target="_blank"><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.phuket101.net/kata-beach/" target="_blank">Kata Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span> Phuket, Thailand</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/cala.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://mallorca.com/en/mallorca/beaches/cala-agulla" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://mallorca.com/en/mallorca/beaches/cala-agulla" target="_blank">Cala Agulla</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span> Mallorca, Spain</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/whitehaven.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://whitehaven-beach.com/" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://whitehaven-beach.com/" target="_blank">Whitehaven Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span>Whitsunday Island, Australia</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  
+	</div>
+  </section>
+
+  <div  id="east1">
+	<div >
+</div>
+   </div>
+  
+   <section id="east" class="router ftco-section ftco-no-pt mt-5" style="display:none;">
+
+	<!-- Content for Eastern Hemisphere -->
+
+	<div class="container" id="eastern">
+		<div class="row justify-content-center pb-4">
+	  <div class="col-md-12 heading-section text-center ftco-animate" >
+		<h2 class="mb-4 mt-3">Eastern Zone</h2>
+	  </div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/kuta.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.indonesia.travel/id/en/destinations/bali-nusa-tenggara/kuta/kuta-beach.html" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.indonesia.travel/id/en/destinations/bali-nusa-tenggara/kuta/kuta-beach.html" target="_blank">Kuta Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span>Bali, Indonesia</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/patong.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://thaiest.com/blog/patong-beach-phuket" target="_blank"><span class="price icon-beach_access"></span></a>
+				<h3><a href="https://thaiest.com/blog/patong-beach-phuket" target="_blank">Patong Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+						<p class="location"><span class=" icon-location_city"></span> Phuket, Thailand</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div><div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/trang.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.lonelyplanet.com/vietnam/south-central-coast/nha-trang" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.lonelyplanet.com/vietnam/south-central-coast/nha-trang" target="_blank">Nha Trang Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span>Vietnam</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/zanzibar.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://johnnyafrica.com/nungwi-zanzibar-travel-guide/" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://johnnyafrica.com/nungwi-zanzibar-travel-guide/" target="_blank">Nungwi Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span>Zanzibar, Tanzania</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/ngapali.jpg.crdownload);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.saltinourhair.com/myanmar/ngapali-beach/" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.saltinourhair.com/myanmar/ngapali-beach/" target="_blank">Ngapali Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span> Myanmar</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/kohrong.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://anywhereweroam.com/koh-rong-island-cambodia/" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://anywhereweroam.com/koh-rong-island-cambodia/" target="_blank"> Koh Rong</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span> Cambodia</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  
+	</div>
+  </section>
+
+  <div  id="west1">
+	<div >
+
+	</div>
+   </div>
+  <!-- Content for Western Hemisphere -->
+  <section id="west" class="router ftco-section ftco-no-pt mt-5" style="display: none;">
+    <div class="container" id="western">
+        <div class="row justify-content-center pb-4">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <h2 class="mb-4 mt-3">Western Zone</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ftco-animate">
+                <div class="project-wrap" onclick="toggleImage(this)">
+                    <div class="img-overlay">
+                        <img class="img" style="background-image: url(images/mayabay.jpg);">
+                    </div>
+                    <div class="text p-4">
+                        <a href="https://theworldtravelguy.com/maya-bay-thailand/" target="_blank"><span class="price icon-link"></span></a>
+                        <h3><span class="icon-link"></span><a href="https://theworldtravelguy.com/maya-bay-thailand/" target="_blank">Maya Bay</a></h3>
+                        <span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+                        <p class="location"><span class="icon-location_city"></span>Thailand</p>
+                        <ul>
+                            <li><span class="icon-bus" title="from town"></span>5</li>
+                            <li><span class="icon-car" title="3 min from town"></span>20+
+                            </li>
+                            <li><span class="icon-local_airport"></span>6</li>
+                            <li><span class="icon-hotel"></span>12</li>
+                            <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+                                <span class="star" data-value="1">&#9733;</span>
+                                <span class="star" data-value="2">&#9733;</span>
+                                <span class="star" data-value="3">&#9733;</span>
+                                <span class="star" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the above structure for each beach section -->
+         <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/eagle.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.aruba.com/us/explore/eagle-beach" target="_blank"><span class="price icon-beach_access"></span></a>
+				<h3><a href="https://www.aruba.com/us/explore/eagle-beach" target="_blank">Eagle Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span>Aruba</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div><div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/kohlipe.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.saltinourhair.com/thailand/koh-lipe/" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.saltinourhair.com/thailand/koh-lipe/" target="_blank">Koh Lipe</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span>Thailand</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/navagio.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://theworldpursuit.com/navagio-beach-zakynthos/" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://theworldpursuit.com/navagio-beach-zakynthos/" target="_blank">Navagio Beach (Shipwreck Beach)</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+						<p class="location"><span class=" icon-location_city"></span> Greece</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/cancunbeach.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.lonelyplanet.com/mexico/cancun" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.lonelyplanet.com/mexico/cancun" target="_blank">Cancun Beach</a></h3>
+				<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span> Mexico</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 ftco-animate">
+			<div class="project-wrap" onclick="toggleImage(this)">
+			  <div class="img-overlay">
+				<img class="img" style="background-image: url(images/florida.jpg);">
+			  </div>
+			  <div class="text p-4">
+				<a href="https://www.visitflorida.com/" target="_blank" ><span class="price icon-link"></span></a>
+				<h3 ><span  class="icon-link"></span><a href="https://www.visitflorida.com/" target="_blank"> Florida</a></h3>
+				<div class="content">
+					<p id="text">
+						<span class="icon-near_me read-more-content">Maya Bay, located on Phi Phi Leh Island in Thailand's Krabi Province, was once a secluded paradise. After being featured in the movie "The Beach" starring Leonardo Dicaprio, it rose to international fame and became a major tourist destination. Maya Bay may not be the same wide-open beach paradise it once was, but it's still a captivating destination worth visiting. With careful management and responsible tourism, its beauty can be enjoyed for generations to come.</span>
+                        <a href="#" class="read-more-link">Read More</a>
+				<p class="location"><span class=" icon-location_city"></span> USA</p>
+				<ul>
+				  <li><span class="icon-bus" title="from town"></span>5</li>
+				  <li><span class="icon-car" title="3 min from town"></span>20+
+				</li>
+				  <li><span class="icon-local_airport"></span>6</li>
+				  <li><span class="icon-hotel"></span>12</li>
+				  <div class="rating" data-id="bali-indonesia-1" title="rate this place">
+					<span class="star" data-value="1">&#9733;</span>
+					<span class="star" data-value="2">&#9733;</span>
+					<span class="star" data-value="3">&#9733;</span>
+					<span class="star" data-value="4">&#9733;</span>
+					<span class="star" data-value="5">&#9733;</span>
+				  </div>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		 
+	</div>
+  </section>
+
+ 
+ 
+<!--gallery-->
+
+ <div class="row justify-content-center pb-2 mt-5" id="gallery">
+	<div class="col-md-12 text-center ftco-animate">
+		<h2 class="mb-4 font-weight-bolder mt-5 pt-5 mb-5 ">Gallery</h2>
+	</div>
+</div>
+ <div class="gallery-container mb-5 pb-5">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="images/about-1.jpg" alt="Image 1">
+                    <div class="overlays">
+                        <div class="text">Image 1 Description</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/about.jpg" alt="Image 2">
+                    <div class="overlays">
+                        <div class="text">Image 2 Description</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Anse.jpg" alt="Image 3">
+                    <div class="overlays">
+                        <div class="text">Image 3 Description</div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="images/bg_1.jpg" alt="Image 4">
+                    <div class="overlays">
+                        <div class="text">Image 4 Description</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/bg_3.jpg" alt="Image 5">
+                    <div class="overlays">
+                        <div class="text">Image 5 Description</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/bg_3.jpg" alt="Image 6">
+                    <div class="overlays">
+                        <div class="text">Image 6 Description</div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/800x500" alt="Image 7">
+                    <div class="overlays">
+                        <div class="text">Image 7 Description</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/800x500" alt="Image 8">
+                    <div class="overlays">
+                        <div class="text">Image 8 Description</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/800x500" alt="Image 9">
+                    <div class="overlays">
+                        <div class="text">Image 9 Description</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <div class="stars"></div> <!-- Container for stars -->
+
+  <!------=====================end of gallery ======================================================================----------->
+
+  <div class="row justify-content-center pb-4">
+	<div class="col-md-12 text-center ftco-animate">
+		<h2 class="mb-4 font-weight-bolder">Tourist Feedback</h2>
+	</div>
+</div>
+  <section style="background-image: url('images/cancunbeach.jpg');" class="mb-5 pb-5 pt-4 mt-5 image-container">
+    <div class="overlay"></div>
+    <div class="container content pb-5 mb-5 mt-4">
+        
+        <div class="row ftco-animate">
+            <div class="col-md-12">
+                <div class="container mt-5 mb-5 ">
+                    <div class="row feedback" id="feedback-display">
+                     <!-- Feedback will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="ftco-section">
+		<div class="container">
+		  <div class="row justify-content-center pb-4">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+			  <h2 class="mb-4">Top Rated Places</h2>
+			</div>
+		  </div>
+		  <div class="row d-flex" id="top-rated-places">
+			<!-- Top-rated places will be inserted here dynamically -->
+		  </div>
+		</div>
+	  </section>
+	  
+
+<!----------------------------==========================>contact us<===================================----------------------------------------->
+
+	<section id="contact">
+
+		<div class="container">
+			<div class="mt-5 pt-5">
+
+			</div>
+		</div>
+			<div class="col-md-12 ftco-animate ">
+			  <h1 class="mb-3 bread text-center font-weight-bolder mt-5 pt-3">Contact Us</h1>
+			</div>
+		  </div>
+		</div>
+	  </section>
+  
+	  <section class="ftco-section ftco-no-pb contact-section fff" id="pco">
+        <div class="container">
+            <div class="row d-flex contact-info">
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-map-signs"></span>
+                        </div>
+                        <h3 class="mb-2">Address</h3>
+                        <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-phone2" id="phone"></span>
+                        </div>
+                        <h3 class="mb-2">Contact Number</h3>
+                        <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-paper-plane"></span>
+                        </div>
+                        <h3 class="mb-2">Email Address</h3>
+                        <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-facebook"></span>
+                        </div>
+                        <h3 class="mb-2">Facebook</h3>
+                        <p><a href="#">yoursite.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+			  
+	  <section class="ftco-section contact-section" id="feedback-section">
+		<div class="container">
+			<div class="row block-9">
+				<div class="col-md-6 order-md-last d-flex">
+					<form id="feedback-form" class="bg-light p-5 contact-form">
+						<div class="form-group">
+							<h1 class="text text-bolder">Feed Back</h1>
+							<input type="text" class="form-control" id="name" placeholder="Your Name" required>
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" placeholder="Your Email" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="subject" placeholder="Subject">
+						</div>
+						<div class="form-group">
+							<textarea cols="30" rows="7" class="form-control" id="message" placeholder="Message" required></textarea>
+						</div>
+						<div class="form-group" style="cursor: pointer;">
+							<label for="mood">How do you feel?</label><br>
+							<input type="radio" id="mood-happy" name="mood" value="happy" required style="cursor: pointer;">
+							<label for="mood-happy">😄</label>
+							<input type="radio" id="mood-sad" name="mood" value="sad" style="cursor: pointer;">
+							<label for="mood-sad">😞</label>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary py-3 px-5">Send</button>
+						</div>
+					</form>
+				</div>
+	
+				<div class="col-md-6 d-flex">
+					<div id="maps" class="bg-white">
+					  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.8959719919594!2d31.213640075126452!3d-27.222415706214544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eefa3005a768d3f%3A0x719d8f6fedf14ce3!2seMachobeni!5e0!3m2!1sen!2s!4v1720092060872!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<!--============================================================end====================================================================-->
+
+	
+	<footer class="ftco-footer bg-bottom">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Customer Service</h2>
+                        <p>FAQ, Support, Terms and Conditions, Privacy Policy.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="https://www.twitter.com/VisitCA" target="_blank"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/VisitMyrtBeach" target="_blank"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/visitmyrtlebeach" target="_blank"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Quick links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                            <li><a href="#about" class="py-2 d-block">About</a></li>
+                            <li><a href="#destination" class="py-2 d-block">Destination</a></li>
+                            <li><a href="#gallery" class="py-2 d-block">Gallery</a></li>
+                            <li><a href="#contact" class="py-2 d-block">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span id="currentLocation" class="text"></span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+268 76859321</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">crispermdluli@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="marquee-container">
+                        <div class="marquee-content" id="currentTime"></div>
+                    </div>
+                    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <a href="index.html" target="_blank">TechnoTroops</a></p>
+                </div>
+            </div>
+        </div>
+		<button class="back-to-tops" onclick="topFunction()" id="backToTopBtn" style="z-index: 2000;" title="Go to top">&#8679; Top</button>
+		<div class="starss"></div> <!-- Stars animation -->
+        <!-- Raindrops animation -->
+        <div class="raindrop" style="--index: 1;"></div>
+        <div class="raindrop" style="--index: 2;"></div>
+        <div class="raindrop" style="--index: 3;"></div>
+    </footer>
+
+<!-- Back to top button -->
+
+
+	 <!-- JavaScript for scrolling time ticker and location -->
+	    <!-- JavaScript for scrolling time ticker and location -->
+    <script>
+  // Function to update current time in the footer
+  function updateTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var timeString = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+            document.getElementById('currentTime').textContent = timeString;
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+
+        // Initial call to display time immediately
+        updateTime();
+
+        // Function to scroll to the top of the page smoothly
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        // Show the back-to-top button when scrolling down
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var backToTopBtn = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        } </script>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Load ratings from local storage
+    loadRatings();
+
+    // Add event listeners to all rating stars
+    const stars = document.querySelectorAll('.rating .star');
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            const rating = this.getAttribute('data-value');
+            const placeId = this.parentNode.getAttribute('data-id');
+            saveRating(placeId, rating);
+            updateRatingDisplay(placeId, rating);
+        });
+    });
+});
+
+function saveRating(placeId, rating) {
+    localStorage.setItem(`rating-${placeId}`, rating);
+}
+
+function loadRatings() {
+    const ratings = document.querySelectorAll('.rating');
+    ratings.forEach(ratingDiv => {
+        const placeId = ratingDiv.getAttribute('data-id');
+        const storedRating = localStorage.getItem(`rating-${placeId}`);
+        if (storedRating) {
+            updateRatingDisplay(placeId, storedRating);
+        }
+    });
+}
+
+function updateRatingDisplay(placeId, rating) {
+    const ratingDiv = document.querySelector(`.rating[data-id="${placeId}"]`);
+    const stars = ratingDiv.querySelectorAll('.star');
+    stars.forEach(star => {
+        if (star.getAttribute('data-value') <= rating) {
+            star.classList.add('rated');
+        } else {
+            star.classList.remove('rated');
+        }
+    });
+}
+
+</script>
+<script>
+    document.getElementById('readMoreLink').addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        var contentSection = document.getElementById('content');
+        var extraContent = document.getElementById('extraContent');
+
+        // Toggle visibility of extra content
+        extraContent.style.display = extraContent.style.display === 'none' ? 'block' : 'none';
+
+        // Update "Read More" link text based on visibility
+        if (extraContent.style.display === 'block') {
+            document.getElementById('readMoreLink').textContent = 'Read Less';
+        } else {
+            document.getElementById('readMoreLink').textContent = 'Read More';
+        }
+    });
+
+	  function updateTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var timeString = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+            document.getElementById('time').textContent = timeString;
+        }
+
+        // Update location function (mocking with static location for example)
+        function updateLocation() {
+            var location = "New York"; // Replace with actual location logic
+            document.getElementById('location').textContent = location;
+        }
+
+        // Back to top function
+        function backToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+
+        // Update location initially and every minute (for example)
+        updateLocation(); // Initial update
+        setInterval(updateLocation, 60000); // Update every minute
+
+        // Show back to top button when scrolling down
+        window.onscroll = function() {
+            var backToTopBtn = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+</script>
+
+
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/like.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/new.js"></script>
+  <script src="js/backtop.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/animjs/3.2.1/anime.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/feedback.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/readmore.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+
+$(document).ready(function() {
+  // Cache selectors
+  var lastId,
+      topMenu = $(".navbar-nav"),
+      topMenuHeight = topMenu.outerHeight() + 1,
+      // All list items
+      menuItems = topMenu.find("a.nav-link"),
+      // Anchors corresponding to menu items
+      scrollItems = menuItems.map(function() {
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
+      });
+
+  // Bind click handler to menu items for smooth scrolling
+  menuItems.click(function(e) {
+    var href = $(this).attr("href"),
+        offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+    $('html, body').stop().animate({ 
+        scrollTop: offsetTop
+    }, 850);
+    e.preventDefault();
+  });
+
+  // Bind to scroll
+  $(window).scroll(function() {
+    // Get container scroll position
+    var fromTop = $(this).scrollTop() + topMenuHeight;
+
+    // Get id of current scroll item
+    var cur = scrollItems.map(function() {
+      if ($(this).offset().top < fromTop)
+        return this;
+    });
+    // Get the id of the current element
+    cur = cur[cur.length - 1];
+    var id = cur && cur.length ? cur[0].id : "";
+
+    if (lastId !== id) {
+      lastId = id;
+      // Set/remove active class
+      menuItems
+        .parent().removeClass("active")
+        .end().filter("[href='#" + id + "']").parent().addClass("active");
+    }                   
+  });
+});
+	// JavaScript to animate icons after a delay
+	document.addEventListener('DOMContentLoaded', function () {
+
+		function updateTimeAndLocation() {
+					  const tickerContent = document.getElementById('ticker-content');
+		  
+					  // Update time
+					  const now = new Date();
+					  const time = now.toLocaleTimeString();
+		  
+					  // Get current location
+					  if (navigator.geolocation) {
+						  navigator.geolocation.getCurrentPosition(position => {
+							  const lat = position.coords.latitude;
+							  const lon = position.coords.longitude;
+							  const location = `Latitude: ${lat.toFixed(2)}, Longitude: ${lon.toFixed(2)}`;
+							  tickerContent.innerHTML = `Time: ${time} | Location: ${location}`;
+						  }, () => {
+							  tickerContent.innerHTML = `Time: ${time} | Location: Unable to retrieve location`;
+						  });
+					  } else {
+						  tickerContent.innerHTML = `Time: ${time} | Location: Geolocation not supported`;
+					  }
+				  }
+		  
+				  updateTimeAndLocation();
+				  setInterval(updateTimeAndLocation, 1000); // Update every second
+			  
+    
+		const raindrops = document.querySelectorAll('.raindrop');
+    raindrops.forEach((drop, index) => {
+      drop.style.left = `${Math.random() * 100}%`; // Adjust left position randomly
+      drop.style.animationDuration = `${Math.random() * 2 + 1}s`; // Randomize animation duration for natural effect
+    });
+
+	// Create the rain effect
+    const rainContainer = document.createElement('div');
+    rainContainer.className = 'rain';
+    document.querySelector('.hero-wrap').appendChild(rainContainer);
+
+    for (let i = 0; i < 100; i++) {
+        const drop = document.createElement('div');
+        drop.className = 'drop';
+        drop.style.left = `${Math.random() * 100}%`;
+        drop.style.animationDuration = `${Math.random() * 1 + 1}s`;
+        drop.style.setProperty('--i', `${Math.random() * 5 + 2}`);
+        rainContainer.appendChild(drop);
+    }
+	var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+            slideChange: function () {
+                var currentSlide = this.slides[this.activeIndex];
+                var slideEffect = currentSlide.dataset.effect;
+
+                if (slideEffect) {
+                    this.setTransition(1000); // Set transition duration
+
+                    // Apply dynamic effect
+                    switch (slideEffect) {
+                        case 'fade':
+                            this.fadeEffect.transition = '0.8s'; // Customize fade transition
+                            this.changeEffect('fade');
+                            break;
+                        case 'cube':
+                            this.cubeEffect.shadow = true; // Customize cube effect
+                            this.changeEffect('cube');
+                            break;
+                        case 'coverflow':
+                            this.coverflowEffect.depth = 300; // Customize coverflow effect
+                            this.changeEffect('coverflow');
+                            break;
+                        default:
+                            this.slideToLoop(this.activeIndex); // Default slide transition
+                            break;
+                    }
+                }
+            },
+        },
+    });
+
+    // Function to generate stars animation
+    function generateStarsAnimation() {
+        var starsContainer = document.querySelector('.stars');
+        starsContainer.innerHTML = ''; // Clear existing stars
+
+        // Generate random number of stars (between 3 to 6 stars)
+        var numStars = Math.floor(Math.random() * 4) + 3;
+        var starAnimationDuration = 1000; // Animation duration in milliseconds
+
+        // Generate stars with random position and delay
+        for (var i = 0; i < numStars; i++) {
+            var star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = Math.random() * 100 + '%'; // Random left position
+            star.style.top = Math.random() * 100 + '%'; // Random top position
+            star.style.animationDuration = starAnimationDuration + 'ms'; // Set animation duration
+            starsContainer.appendChild(star);
+        }
+    }
+
+    // Example function to update star ratings
+    function updateRating(stars, rating, isTemporary = false) {
+        stars.forEach((star, index) => {
+            if (index < rating) {
+                star.innerHTML = '&#9733;'; // Filled star
+            } else {
+                star.innerHTML = '&#9734;'; // Empty star
+            }
+        });
+
+        if (!isTemporary) {
+            stars[0].parentElement.setAttribute('data-rating', rating);
+        }
+    }
+
+    // Example usage:
+    var stars = document.querySelectorAll('.star');
+    var initialRating = 3; // Initial rating (example)
+    updateRating(stars, initialRating); // Update stars with initial rating
+});
+
+
+const ratingContainers = document.querySelectorAll('.rating');
+
+ratingContainers.forEach(container => {
+  const stars = container.querySelectorAll('.star');
+  const ratingId = container.getAttribute('data-id');
+  const savedRating = localStorage.getItem(ratingId);
+
+  if (savedRating) {
+	updateRating(stars, savedRating);
+  }
+
+  stars.forEach((star, index) => {
+	star.addEventListener('click', () => {
+	  const rating = index + 1;
+	  updateRating(stars, rating);
+	  localStorage.setItem(ratingId, rating);
+	  updateTopRatedPlaces();
+	});
+
+	star.addEventListener('mouseover', () => {
+	  updateRating(stars, index + 1, true);
+	});
+
+	star.addEventListener('mouseout', () => {
+	  const currentRating = localStorage.getItem(ratingId) || 0;
+	  updateRating(stars, currentRating);
+	});
+  });
+});
+
+function updateRating(stars, rating, isTemporary = false) {
+  stars.forEach((star, index) => {
+	if (index < rating) {
+	  star.innerHTML = '&#9733;';
+	} else {
+	  star.innerHTML = '&#9734;';
+	}
+  });
+
+  if (!isTemporary) {
+	stars[0].parentElement.setAttribute('data-rating', rating);
+  }
+}
+
+function getRatings() {
+  const ratings = [];
+  ratingContainers.forEach(container => {
+	const ratingId = container.getAttribute('data-id');
+	const rating = localStorage.getItem(ratingId) || 0;
+	const imgSrc = container.closest('.project-wrap').querySelector('.img').style.backgroundImage.slice(5, -2);
+	const placeName = container.closest('.project-wrap').querySelector('h3 a').innerText;
+	ratings.push({ ratingId, rating: parseInt(rating), imgSrc, placeName });
+  });
+  return ratings;
+}
+
+
+
+
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+			const texts = ["Discover Beautiful Beaches", "Relax Under the Sun", "Enjoy the Ocean Breeze"];
+    let count = 0;
+    let index = 0;
+    let currentText = '';
+    let letter = '';
+
+    function type() {
+        if (count === texts.length) {
+            count = 0;
+        }
+        currentText = texts[count];
+        letter = currentText.slice(0, ++index);
+
+        document.querySelector('.typing').textContent = letter;
+        if (letter.length === currentText.length) {
+            count++;
+            index = 0;
+            setTimeout(() => {
+                document.querySelector('.typing').textContent = '';
+            }, 2000);
+        }
+        setTimeout(type, 200);
+    }
+
+    type();
+
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+
+    // Function to remove 'active' class from all nav links
+    function removeActiveClasses() {
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+    }
+
+    // Function to add 'active' class to the current nav link
+    function addActiveClass(id) {
+        const link = document.querySelector(`.nav-link[href="#${id}"]`);
+        if (link) {
+            link.classList.add('active');
+        }
+    }
+
+    // Function to handle scroll event
+    function onScroll() {
+        let currentSectionId = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
+                currentSectionId = section.getAttribute('id');
+            }
+        });
+
+        if (currentSectionId) {
+            removeActiveClasses();
+            addActiveClass(currentSectionId);
+        }
+    }
+
+    // Add event listener for scroll
+    window.addEventListener('scroll', onScroll);
+    
+    // Add event listener for click to keep the active class after clicking
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            removeActiveClasses();
+            link.classList.add('active');
+        });
+    });
+});
+	</script>
+  </body>
+</html>
